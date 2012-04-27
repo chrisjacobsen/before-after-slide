@@ -93,7 +93,7 @@
 			"top": "-"+(imgHeight*2),
 			"height": imgHeight+"px",
 			"width": "1px",
-			"background": "red"
+			"background": "#999"
 		}).css(lineStyle);
     };
     $.fn[pluginName] = function(options) {
