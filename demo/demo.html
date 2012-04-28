@@ -1,30 +1,39 @@
 <html>
-  <head>
-    <meta charset=utf-8>
-    <title>mask image test</title>
-    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script src="./../beforeAfter-0.1.js"></script>
-    <script>
-    	// You need to make sure the images are loaded before using
-		$(window).load(function() {
-			$("#before_after").beforeAfter({
-				moveAdjust: 2,
-				moveSelector: "#move_on_me"
-			});
-		});
-	</script>
-    <style type="text/css">
-		#before_after { margin:0 auto; border: solid 2px #f00; }
-		#move_on_me { margin:0 auto; width:464px; padding:20px 0; }
-    </style>
-  </head>
-  <body>
-  	<h1>Before After Slide v0.1 demo</h1>
-  	<div id="move_on_me">
-	  <div id="before_after">
-		<img src="./before.png" />
-		<img src="./after.png" />
-	  </div>
-  	</div>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>Before After Slide Demo</title>
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="../beforeAfter-0.1.js"></script>
+        <script>
+            // You need to make sure the images are loaded first
+            $(window).load(function() {
+                $("#before_after").beforeAfter({
+                    moveSelector: "#move_on_me",
+                    moveAdjust: 12
+                });
+            });
+        </script>
+        <style type="text/css">
+            #before_after {
+                padding:10px;
+                border: solid 2px #f00;
+                margin:0 auto;
+            }
+            #move_on_me {
+                margin:0 auto;
+                width:484px;
+                padding:20px 0;
+                background:#000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Before After Slide v0.1 demo</h1>
+        <div id="move_on_me">
+            <div id="before_after">
+                <img src="./before.png" />
+                <img src="./after.png" />
+            </div>
+        </div>
+    </body>
 </html>

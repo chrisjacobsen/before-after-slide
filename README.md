@@ -4,7 +4,7 @@ before-after-slide
 # To use:
 
 # scripts
-    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="beforeAfter-0.1.js"></script>
 
 
@@ -19,9 +19,9 @@ before-after-slide
         <img src="./after.png" />
     </div>
 
-quickly tested in Chrome, Firefox and Safari. Should probably work in IE too
+tested in Chrome, Firefox, Safari and IE 8+
 
-works best with jQuery 1.7+ because the event delegation is way beter
+works best with jQuery 1.7+
 
 you don't even have to know the image sizes
 
@@ -29,7 +29,7 @@ will adjust image sizes (with css) if they don't match (unles you don't want it 
 
 you can set the classes of the extra mark-up
 
-You can completely customise the line that splits before and after
+you can completely customise the line that splits before and after
 
 you can specify where to bind the mouse event for overflow (defaults to the image container)
 
