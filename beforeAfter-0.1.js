@@ -52,8 +52,8 @@
         // if needed fix image sizes
         if (fixSizes && (imgWidth !== imgWidth2 || imgHeight !== imgHeight2)) {
             $(eId+" img:last").css({
-                "width": imgWidth,
-                "height": imgHeight
+                "width": imgWidth+"px",
+                "height": imgHeight+"px"
             });
         }
         // move the "after" image and seperation line
@@ -66,7 +66,7 @@
                 x = imgWidth - 1;
             }
             $(eId +" ."+wrapClass).css("width", x+"px");
-            $(eId +" ."+lineClass).css("left", x);
+            $(eId +" ."+lineClass).css("left", x+"px");
         }
         // set up mouse move binding
         $("html").delegate(moveSelector, "mousemove", function(e) {
@@ -93,12 +93,12 @@
         $(eId+" img:last").wrap('<div class="'+wrapClass+'" style="overflow:hidden; width:0;" />');
         $(eId +" ."+wrapClass).css({
             "position": "relative",
-            "top": "-"+imgHeight
+            "top": "-"+imgHeight+"px"
         });
         $(eId).append('<div class="'+lineClass+'" />');
         $(eId+" ."+lineClass).css({
             "position": "relative",
-            "top": "-"+(imgHeight*2),
+            "top": "-"+(imgHeight*2)+"px",
             "height": imgHeight+"px",
             "width": "1px",
             "background": "#999"
